@@ -5,9 +5,11 @@ $(document).ready(function(){
 		var img = $(aparent).children("img");
 		var alertaalt = $(img).attr("alt");
 		alert(alertaalt);
+		// e.stopPropagation();
 	})
-	$(".social__like").on("click", function(e){
+	$(".social__element").on("click", ".social__like", function(e){
 		e.preventDefault();
 		$(this).toggleClass("social__like--clicked");
+		// e.stopPropagation();
 	})
 })
